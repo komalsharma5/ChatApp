@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-1::-webkit-scrollbar {
+    display: none;
+}
+
+/* For hiding the scrollbar while keeping functionality */
+.hidden-scrollbar {
+    overflow-y: scroll; /* Ensures scrolling functionality */
+    scrollbar-width: none; /* For Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
